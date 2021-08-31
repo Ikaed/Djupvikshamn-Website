@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>English - Port of Djupvik</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="/css/normalize.css" />
+      <link rel="stylesheet" href="/css/main.css" />
+      <script src="/js/main.js" type="module"></script> 
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2" />
+      <meta name="description" content="A webpage about the port of Djupvik in Gotland, Sweden.">
+      <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32" />
+   </head>
+   <body>
+      <header>
+         <!--Avsedd för att centrera logotypen och titeln för webbsidan vid mobil-->
+         <div class="headerwrapper">
+            <div id="logobrand">
+               <picture>
+                  <source media="(min-width: 1281px)" srcset="/images/logo.svg"/>
+                  <source media="(min-width: 769px)" srcset="/images/logo_medium.svg"/>
+                  <img src="/images/logo_small.svg" alt="Bild på en GPS-pin och inuti hålet en krok">
+               </picture>
+               <h1>Djupviks hamn</h1>
+            </div>
+         </div>
+      </header>
+      <nav>
+         <ul>
+            <li><a href="../index.html">Startsida</a></li>
+            <li><a href="guest.html">Gästplats</a></li>
+            <li><a href="history.html">Historia</a></li>
+            <li><a href="member.html">Medlemsplats</a></li>
+            <li><a href="tourist.html">Turistmål</a></li>
+            <li><a href=#contactinfo>Kontakt</a></li>
+            <li><a href="../index.html">Swedish</a></li>
+         </ul>
+      </nav>
+      <main>
+         <section class="cards">
+            <article class="information">
+               <h2>Port of Djupvik</h2>
+               <p>
+                  The Port of Djupvik is located on the east coast of Gotland very close to the beautiful smaller island Lilla Karlsö. Adjacent to the port is a small and charming fishing-village which, during summer, comes to life with a relaxed and welcoming buzz.
+               </p>
+               <p>Close by and situated with a fantastic view over the port is Djupvik Hotel, with modern standard and with its own popular restaurant.
+               </p>      
+               <p>Both the port and the fishing village have a beautiful view of two popular bird islands called “Lilla Karlsö” and “Stora Karlsö”.
+               </p>
+               <p> The coastline south of Djupvik, called “Ekstakusten” is incredibly beautiful and invites to nice scenery and views on foot, by bike or by car.
+               </p>
+               <p>North, and connected to the port, is a small sandy beach which is well soothed for a nice swim.
+               </p>
+               <p>The distance from the port to Lilla Karlsö is about 2 nautical miles and it is about twice as long to Stora Karlsö (4nm).
+               </p>
+               <p>For more information, check out the websites: <a href="https://www.lillakarlso.org">lillakarlso.org</a> and <a href="https://www.storakarlso.se">storakarlso.se</a>. For information about Djupvik Hotel: <a href="https://www.djupvikhotel.com">djupvikhotel.com</a>
+               </p>
+               <p>Are you interested of visiting Djupvik by boat? The 24 hour rate is 150 sek including key to the service house and a 20 sek fee to the two showers. A connection to the electricity is an additional 50 sek / 24 hour.
+               </p>
+               <p>Please contact the port manager for more inquiries: Bo Lautin, cellnr: +46 707 920310
+               </p>
+            </article>
+         </section>
+      </main>
+      <footer>
+         <div class="footerwrapper">
+            <address>
+               <p>Hamnfogde Bo Lautin
+                  <br>
+                  0707-920310
+                  <br>
+                  Djupviks hamnförening
+                  <br>
+                  c/o Ekholm
+                  <br>
+                  Eksta Hägur 170
+                  <br>
+                  623 54 Klintehamn 
+               </p>
+               <p id="copyright"> Copyright of Djupvikshamn.se 2021.  Alla rättigheter förbehållna. <a href="mailto:info@djupvikshamn.se">info@djupvikshamn.se</a></p>
+            </address>
+            <div id="quicklinks">
+               <h2>Snabblänkar</h2>
+               <ul>
+                  <li><a href="../html/guest.html">Gästplats</a></li>
+                  <li><a href="../html/history.html">Historia</a></li>
+                  <li><a href="../html/member.html">Medlemsplats</a></li>
+                  <li><a href="../html/tourist.html">Turistmål</a></li>
+               </ul>
+            </div>
+         </div>
+         <aside id="contactinfo">
+            <h2>Kontaktformulär</h2>
+            <form action=# method=post>
+               <fieldset>
+                  <legend>Fyll i ärendet:</legend>
+                  <p>
+                     <label for="Heading">Rubrik*:</label>
+                     <input type="text" maxlength="20" id="Heading" name="heading" size="17" required><br>
+                     <label for="Message">Meddelande*:</label>
+                     <!--Textruta att skriva i-->
+                     <textarea rows="5" maxlength="256" cols="23" name="message" id="Message" required>
+                      </textarea>
+                  </p>
+               </fieldset>
+            </form>
+            <form action=# method=post>
+               <fieldset>
+                  <legend>Ärende*:</legend>
+                  <p>
+                     <label for="concernform">
+                        <select id="concernform" name="concern" required>
+                           <option value="" disabled selected>Vad gäller ditt ärende?</option>
+                           <option value="boat">Båtplats</option>
+                           <option value="member">Medlem</option>
+                           <option value="other">Övrigt</option>
+                        </select>
+                     </label>
+                  </p>
+               </fieldset>
+            </form>
+            <fieldset>
+               <legend>Kontaktsätt*:</legend>
+               <form action=# method=post>
+                  <p>
+                     <!--Rullista-->
+                     <label for="contactform">
+                        <select id="contactform" name="contact" required>
+                           <option value="" disabled selected>Hur vill du bli kontaktad?</option>
+                           <option value="mail">E-mail</option>
+                           <option value="phone">Telefon</option>
+                           <option value="nothing">Ingen kontakt</option>
+                        </select>
+                     </label>
+                  </p>
+               </form>
+            </fieldset>
+            <fieldset>
+               <legend>Fyll i dina kontaktuppgifter:</legend>
+               <form action=# method=post>
+                  <p>
+                     <label for="Email">E-mail:</label>
+                     <input type="text" maxlength="30" id="Email" name="email" size="17" /><br>
+                     <label for="PhoneNumberEmail">Telefon:</label>
+                     <input type="text" maxlength="12" id="PhoneNumberEmail" name="phonenumberemail" size="17" /><br>
+                  </p>
+               </form>
+            </fieldset>
+            <br>
+            <p>
+               <!--Knapp-->
+               <input type="submit" value="Skicka >>" />
+               <input type="reset" value="Återställ" />
+            </p>
+         </aside>
+      </footer>
+      <button id="upButton" title="Uppåt">▲</button>
+   </body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="sv">
+   <head>
+      <title>Gästplats - Djupvikshamn</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="/css/normalize.css" />
+      <link rel="stylesheet" href="/css/weatherForecasts.css" />
+      <link rel="stylesheet" href="/css/main.css" />
+      <script src="/js/main.js" type="module"></script>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2" />
+      <meta name="description" content="A webpage about the port of Djupvik in Gotland, Sweden">
+      <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32" />
+   </head>
+   <body>
+      <header>
+         <!--Avsedd för att centrera logotypen och titeln för webbsidan vid mobil-->
+         <div class="headerwrapper">
+            <div id="logobrand">
+               <picture>
+                  <source media="(min-width: 1281px)" srcset="/images/logo.svg" />
+                  <source media="(min-width: 769px)" srcset="/images/logo_medium.svg" />
+                  <img src="/images/logo_small.svg" alt="Bild på en GPS-pin och inuti hålet en krok">
+               </picture>
+               <h1>Djupviks hamn</h1>
+            </div>
+         </div>
+      </header>
+      <nav>
+         <ul>
+            <li><a href="../index.html">Startsida</a></li>
+            <li><a href="#" id="activePage">Gästplats</a></li>
+            <li><a href="history.html">Historia</a></li>
+            <li><a href="member.html">Medlemsplats</a></li>
+            <li><a href="tourist.html">Turistmål</a></li>
+            <li><a href=#contactinfo>Kontakt</a></li>
+            <li><a href="english.html">English</a></li>
+         </ul>
+      </nav>
+      <main>
+         <section class="cards">
+            <article id="guestinfo">
+               <h2>Gästhamnen</h2>
+               <p>Gästbåtar är hjärtligt välkomna!</p>
+               <p>Vid normalvattendjup är djupet 3 meter i huvuddelen av hamnen. Vatten och el finns utdraget på kajerna. I
+                  land kan vi erbjuda ett modernt servicehus med WC, dusch och tvättmaskin.
+                  Ring gärna hamnfogden för att få reda på aktuellt läge.
+               </p>
+               <p>Dygnshyra 150:- /dygn*</p>
+               <p> El-anslutning 50:-/dygn 
+               </p>
+               <p>*inkluderat kort för tillträde till servicehuset och 20:- för två duschar
+               </p>
+               <p>Hamnfogde Bo Lautin Mobil 0707 - 92 03 10</p>
+            </article>
+            <section>
+               <article id="smhi-widget">
+               </article>
+            </section>
+         </section>
+      </main>
+      <footer>
+         <div class="footerwrapper">
+            <address>
+               <p>Hamnfogde Bo Lautin
+                  <br>
+                  0707-920310
+                  <br>
+                  Djupviks hamnförening
+                  <br>
+                  c/o Ekholm
+                  <br>
+                  Eksta Hägur 170
+                  <br>
+                  623 54 Klintehamn
+               </p>
+               <p id="copyright"> Copyright of Djupvikshamn.se 2021. Alla rättigheter förbehållna. <a
+                  href="mailto:info@djupvikshamn.se">info@djupvikshamn.se</a></p>
+            </address>
+            <div id="quicklinks">
+               <h2>Snabblänkar</h2>
+               <ul>
+                  <li><a href="#" id="activeQuicklinkPage">Gästplats</a></li>
+                  <li><a href="../html/history.html">Historia</a></li>
+                  <li><a href="../html/member.html">Medlemsplats</a></li>
+                  <li><a href="../html/tourist.html">Turistmål</a></li>
+               </ul>
+            </div>
+         </div>
+         <aside id="contactinfo">
+            <h2>Kontaktformulär</h2>
+            <form action=# method=post>
+               <fieldset>
+                  <legend>Fyll i ärendet:</legend>
+                  <p>
+                     <label for="Heading">Rubrik*:</label>
+                     <input type="text" maxlength="20" id="Heading" name="heading" size="17" required><br>
+                     <label for="Message">Meddelande*:</label>
+                     <!--Textruta att skriva i-->
+                     <textarea rows="5" maxlength="256" cols="23" name="message" id="Message" required>
+                      </textarea>
+                  </p>
+               </fieldset>
+            </form>
+            <form action=# method=post>
+               <fieldset>
+                  <legend>Ärende*:</legend>
+                  <p>
+                     <label for="concernform">
+                        <select id="concernform" name="concern" required>
+                           <option value="" disabled selected>Vad gäller ditt ärende?</option>
+                           <option value="boat">Båtplats</option>
+                           <option value="member">Medlem</option>
+                           <option value="other">Övrigt</option>
+                        </select>
+                     </label>
+                  </p>
+               </fieldset>
+            </form>
+            <fieldset>
+               <legend>Kontaktsätt*:</legend>
+               <form action=# method=post>
+                  <p>
+                     <!--Rullista-->
+                     <label for="contactform">
+                        <select id="contactform" name="contact" required>
+                           <option value="" disabled selected>Hur vill du bli kontaktad?</option>
+                           <option value="mail">E-mail</option>
+                           <option value="phone">Telefon</option>
+                           <option value="nothing">Ingen kontakt</option>
+                        </select>
+                     </label>
+                  </p>
+               </form>
+            </fieldset>
+            <fieldset>
+               <legend>Fyll i dina kontaktuppgifter:</legend>
+               <form action=# method=post>
+                  <p>
+                     <label for="Email">E-mail:</label>
+                     <input type="text" maxlength="30" id="Email" name="email" size="17" /><br>
+                     <label for="PhoneNumberEmail">Telefon:</label>
+                     <input type="text" maxlength="12" id="PhoneNumberEmail" name="phonenumberemail" size="17" /><br>
+                  </p>
+               </form>
+            </fieldset>
+            <br>
+            <p>
+               <!--Knapp-->
+               <input type="submit" value="Skicka >>" />
+               <input type="reset" value="Återställ" />
+            </p>
+         </aside>
+      </footer>
+      <button id="upButton" title="Uppåt">▲</button>
+   </body>
+</html>
