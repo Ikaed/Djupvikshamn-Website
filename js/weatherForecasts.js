@@ -6,7 +6,7 @@ import {
 export function importWeather() {
   var weatherList = getWeather();
   weatherList.then(morningForecast); //Idag, klockan 6
-  weatherList.then(noonForecast); //Idag,, klockan 12
+  weatherList.then(noonForecast); //Idag, klockan 12
   weatherList.then(eveningForecast); //Idag, klockan 18
   weatherList.then(tomorrowMorningForecast); //Imorgon, klockan 6
   weatherList.then(tomorrowNoonForecast); //Imorgon, klockan 12
